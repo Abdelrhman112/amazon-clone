@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  background-color: #eaeded;
+}
+// Start Of Header
+#header {
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  > a img {
+    width: 95px;
+    margin: 18px 20px 4px 20px;
+  }
+  #header__search {
+    display: flex;
+    flex: 1 1;
+    min-height: 32px;
+    > input {
+      border-radius: 5px 0 0 5px;
+      border: none;
+      padding: 0 10px;
+      width: 100%;
+    }
+    > button {
+      background-color: #febd69;
+      color: #323232;
+      border: none;
+      width: 50px;
+      border-radius: 0 5px 5px 0;
+      font-size: 15px;
+      cursor: pointer;
+      &:hover {
+        background-color: #f3a847;
+      }
+    }
+  }
+  #header__nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    #header__option {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .header__checkout__icon {
+      display: flex;
+      flex-direction: row!important;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      > span i {
+        font-size: 20px;
+      }
+      > span strong {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+// End Of Header
+// Start Of Home
+#home {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  > img {
+    width: 100%;
+    margin-bottom: -150px;
+    z-index: -1;
+    mask-image: linear-gradient(180deg,#000,transparent);
+  }
+  #home__row {
+    margin: 5px 5px 20px 5px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    #product {
+      margin-left: 10px;
+      margin-right: 10px;
+      background-color: #fff;
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      #product__info {
+        text-align: start;
+        width: 100%;
+        #product__price {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        #product__rating {
+          color: #f0c14b;
+        }
+      }
+      > img {
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      > button {
+        background-color: #f0c14b;
+        border: 1px solid;
+        border-color: #a88734 #9c7e31 #846a29;
+        padding: 2px 5px;
+      }
+    }
+  }
+}
+// End Of Home
